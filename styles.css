@@ -1,0 +1,48 @@
+.headerC {
+  padding: 60px;
+  text-align: center;
+  background: #0c0c0c;
+  color: white;
+  font-size: 30px;
+  font-family: serif;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #151515;
+  color: white;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.menuC {
+  background: rgb(191, 191, 190);
+  height: 60px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuC {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.menuC a:visited {
+  color: black;
+}
+.menuC a:hover {
+  color: rgb(255, 255, 255);
+}
+.menuC a:link {
+  text-decoration: none;
+}
+
+.para1 {
+  height: 500px;
+  background: rgb(252, 249, 249);
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

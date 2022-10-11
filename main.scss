@@ -1,0 +1,17 @@
+
+@use "container";
+@use "text";
+
+.headerC {@include container.header;}
+
+.footer {@include container.footer}
+
+.menuC{@include container.menu}
+
+.menuC{@include text.menutext}
+.para1{@include container.para1}
+
+
+
+
+

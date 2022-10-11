@@ -1,0 +1,40 @@
+@mixin header { padding: 60px;
+                text-align: center;
+                background: #0c0c0c;
+                color: white;
+                font-size: 30px;
+                font-family:serif;
+    
+              }
+              
+
+@mixin menu {   background:rgb(191, 191, 190);
+                height: 60px;
+                display: flex;
+                gap: 60px;
+                justify-content: center;
+                align-items: center;
+  
+           
+            }
+@mixin footer { padding: 5px;
+                text-align: center;
+                background: #151515;
+                color: white;
+                font-size: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+              }
+
+@mixin para1 {  
+                height:500px ;
+                background:rgb(252, 249, 249) ;
+                align-items:center;
+                
+              }
+
+
+
+    
+
+  
