@@ -1,0 +1,61 @@
+@use "../sass/variables" as v;
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.startPage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+    Background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__arrow__down-white {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 40px;
+        margin-left: 50%;
+        margin-right: 50%;
+
+        a {
+            color: whitesmoke;
+            font-size: 18px;
+        }
+
+    }
+
+}
+
+
+.home__text__container {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    width: 260px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+
+    @media screen and (min-width: v.$desktop_brakepoint) {
+        width: 600px;
+    }
+
+    .intro {
+        font-size: 2em;
+        margin-bottom: 50px;
+    }
+
+    .caption {
+        font-size: 1.3em;
+    }
+
+}

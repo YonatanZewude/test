@@ -1,0 +1,52 @@
+@use "../sass/variables" as v;
+@use "../sass/mixins" as m;
+
+#contactPage {
+    background-color: black;
+    padding: auto;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+
+    @include m.common-styles;
+
+    @media screen and (min-width: v.$desktop_brakepoint) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__info {
+        margin-left: 100px;
+        text-align: left;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    &__social {
+        background-color: red($color: #ff5050);
+        margin-left: 100px;
+
+        &-item {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        &-text {
+            margin-top: 2px;
+            font-size: 1.2em;
+
+        }
+    }
+
+
+
+}

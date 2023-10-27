@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(163, 163, 241);
+}
+
+#add-task-container,
+#task-container {
+  width: 400px;
+  height: auto;
+  background-color: rgb(230, 226, 233);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#task-input {
+  width: 200px;
+  height: 30px;
+  padding-left: 40px;
+  margin: 20px;
+  margin-left: 60px;
+  margin-right: 2px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+#add-button {
+  font-size: 18px;
+  width: 80px;
+  padding: 10px 20px;
+  background-color: rgb(198, 145, 247);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  outline: none;
+
+  &:hover {
+    background-color: #af7bbe;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px rgba(204, 164, 241, 0.7);
+  }
+}
+
+li {
+  border: 1px black solid;
+  width: 300px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 25px;
+  border-radius: 5px;
+  list-style-type: none;
+  padding-top: 4px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.fa-solid {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.done-button {
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+}

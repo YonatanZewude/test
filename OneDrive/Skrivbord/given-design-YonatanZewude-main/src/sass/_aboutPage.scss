@@ -1,0 +1,152 @@
+@use "../sass/variables" as v;
+@use "../sass/mixins" as m;
+
+
+.aboutPage {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    &__title {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2em;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    &__profile__container__parent {
+        width: 100%;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px;
+
+
+    }
+
+    &__profile__container {
+        margin-top: auto;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        height: auto;
+
+
+        @media screen and (min-width: v.$desktop_brakepoint) {
+            height: auto;
+
+            &__name {
+                font-size: 7.2em;
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                grid-area: 1/1, 1/2, 2/1;
+            }
+
+            &:nth-child(4) {
+                grid-area: 2/2;
+
+
+            }
+        }
+    }
+
+    &__arrow__down-black {
+        margin-bottom: 20px;
+        margin-left: 50%;
+        margin-right: 50%;
+
+        a {
+            color: black;
+            font-size: 18px;
+
+        }
+    }
+}
+
+.profile {
+    padding: 0;
+    margin: 0;
+
+    &__name {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    &__img__container {
+
+        @include m.profile-img;
+
+        &.container1 {
+            background-image: url("../assets/profiles/Rakib_Square.png");
+
+        }
+
+        &.container2 {
+            background-image: url("../assets/profiles/Alexandra_Square.png");
+
+        }
+
+        &.container3 {
+            background-image: url("../assets/profiles/NoPerson_Square.png");
+
+        }
+
+        &.container4 {
+            background-image: url("../assets/profiles/Sebastian_Square.png");
+
+        }
+
+    }
+
+
+
+    &__info {
+        width: 90%;
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        background-color: rgb(209, 209, 209);
+        border-radius: 7px;
+        transition: width 0.8s, height 0.8s;
+
+
+        @media screen and (min-width: v.$tablet_brakepoint) {
+            width: 50%;
+        }
+
+        @media screen and (min-width: v.$desktop_brakepoint) {
+            width: 60%;
+        }
+
+        &__description {
+            color: rgb(0, 0, 0);
+            display: inline;
+            font-size: 1.2em;
+
+        }
+
+        &__quote::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+            font-weight: 600;
+            background-image: url(../assets/quote.png);
+            background-size: cover;
+            background-position: center center;
+            mix-blend-mode: multiply;
+            margin-top: 20px;
+        }
+
+    }
+
+}
